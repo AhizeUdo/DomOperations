@@ -4,6 +4,9 @@
 }
 
 body{
-    background-image: linear-gradient(black, black, black, white);
+    /* background-image: linear-gradient(black, black, black, white); */
+    /* background-color: #a892ee; */
+    /* background-image: radial-gradient(rgb(67, 29, 67), rgb(0, 0, 0)); */
+    background-image: linear-gradient(rgb(134, 121, 255), rgb(31, 28, 28));
     height: 100vh;
 }

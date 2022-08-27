@@ -4,6 +4,6 @@
 }
 
 body{
-    background-image: linear-gradient(black, black,  white);
+    background-image: linear-gradient(black, black, black, white);
     height: 100vh;
 }

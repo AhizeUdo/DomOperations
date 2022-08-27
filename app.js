@@ -45,7 +45,7 @@ header_set.push(header_two)
 console.log(header_set)
 header_set[0].style.color = "white"
 header_set[0].style.marginTop = '4%'
-header_set[0].style.marginBottom = '5%'
+header_set[0].style.marginBottom = '1%'
 header_set[1].style.color = "white"
 header_set[0].style.fontSize = '6rem'
 header_set[1].style.fontSize = '3rem'

@@ -111,9 +111,12 @@ const li_loop = function(){
 }
 li_loop()
 
+//About Us 
+
 const navul = document.createElement('ul');
 navul.className = 'navUl';
 navul.id = 'navUl-id';
+navul.style.position = 'relative'
 
 const navul_li_one = document.createElement('li');
 const navul_li_two = document.createElement('li');
@@ -123,18 +126,55 @@ navul_li_one.appendChild(document.createTextNode('Contact Us'));
 navul_li_two.appendChild(document.createTextNode('Dealers'));
 navul_li_three.appendChild(document.createTextNode('Green Statement'));
 
-navul_li_one.className = 'aboutUs-list'
-navul_li_two.className = 'aboutUs-list'
-navul_li_three.className = 'aboutUs-list'
-
-navul.appendChild(navul_li_one)
-navul.appendChild(navul_li_two)
-navul.appendChild(navul_li_three)
+navul_li_one.className = 'aboutUs-list';
+navul_li_two.className = 'aboutUs-list';
+navul_li_three.className = 'aboutUs-list';
 
 
 
-document.getElementById('list-two').appendChild(navul)
+const navUl_container = []
+navUl_container.push(navul_li_one);
+navUl_container.push(navul_li_two);
+navUl_container.push(navul_li_three);
 
-console.log(navul)
+const aboutUsloop = function(){
+    for(let i = 0; i < navUl_container.length; i++){
+        navUl_container[i].id = 'navLi-id';
+        navUl_container[i].style.color = 'black';
+        navUl_container[i].style.listStyle = 'none';
+        navUl_container[i].style.display = 'none';
+        navUl_container[i].style.padding = '5px';
+        // navUl_container[i].style.flexDirection = 'row';
+        navUl_container[i].style.textAlign = 'center';
+        // navUl_container[i].style.position = 'absolute'
+    }
+}
+
+aboutUsloop();
+
+
+document.addEventListener('click', function displayfunction(){
+    document.getElementById('navLi-id').style.display = 'block';
+    document.getElementById('navLi-id').style.color = 'black';
+    document.getElementById('navLi-id').style.height = '150px';
+    // document.getElementById('navLi-id').style.padding = '50px';
+    
+})
+
+document.addEventListener('mouseout', function undisplayfunction(){
+    document.getElementById('navLi-id').style.display = 'none'
+})
+
+console.log(navUl_container);
+
+navul.appendChild(navul_li_one);
+navul.appendChild(navul_li_two);
+navul.appendChild(navul_li_three);
+
+
+
+document.getElementById('list-two').appendChild(navul);
+
+console.log(navul);
 
 

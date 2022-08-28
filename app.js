@@ -113,7 +113,7 @@ li_loop()
 
 const navul = document.createElement('ul');
 navul.className = 'navUl';
-navul.id = 'navUlid';
+navul.id = 'navUl-id';
 
 const navul_li_one = document.createElement('li');
 const navul_li_two = document.createElement('li');
@@ -123,6 +123,10 @@ navul_li_one.appendChild(document.createTextNode('Contact Us'));
 navul_li_two.appendChild(document.createTextNode('Dealers'));
 navul_li_three.appendChild(document.createTextNode('Green Statement'));
 
+navul_li_one.className = 'aboutUs-list'
+navul_li_two.className = 'aboutUs-list'
+navul_li_three.className = 'aboutUs-list'
+
 navul.appendChild(navul_li_one)
 navul.appendChild(navul_li_two)
 navul.appendChild(navul_li_three)
@@ -130,14 +134,6 @@ navul.appendChild(navul_li_three)
 
 
 document.getElementById('list-two').appendChild(navul)
-
-navul_list = []
-navul_list.push(navul_li_one)
-navul_list.push(navul_li_two)
-navul_list.push(navul_li_three)
-
-console.log(navul_list)
-navul_list.className = 'aboutus-nav-list'
 
 console.log(navul)
 

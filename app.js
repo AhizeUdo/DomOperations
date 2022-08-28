@@ -95,17 +95,50 @@ ul.style.display = 'flex'
 
 const li_loop = function(){
     for(let i = 0; i < li_set.length; i++){
-        li_set[i].style.color = 'white'
-        li_set[i].style.fontSize = '1.7rem'
-        li_set[i].style.fontFamily = "'Dosis', Sans-serif"
-        li_set[i].style.padding = '2rem'
-        li_set[i].style.marginLeft = '13.5%'
-        li_set[i].style.marginRight = '12%'
-        li_set[i].style.cursor = 'pointer'
-        li_set[i].style.flexDirection = 'column'
-        li_set[i].style.listStyle = 'none'
-        li_set[i].style.textAlign = 'center'
+        li_set[i].style.color = 'white';
+        li_set[i].style.fontSize = '1.7rem';
+        li_set[i].style.fontFamily = "'Dosis', Sans-serif";
+        li_set[i].style.padding = '2rem';
+        li_set[i].style.marginLeft = '13.5%';
+        li_set[i].style.marginRight = '12%';
+        li_set[i].style.cursor = 'pointer';
+        li_set[i].style.flexDirection = 'column';
+        li_set[i].style.listStyle = 'none';
+        li_set[i].style.textAlign = 'center';
+        li_set[i].style.display = 'float';
 
     }
 }
 li_loop()
+
+const navul = document.createElement('ul');
+navul.className = 'navUl';
+navul.id = 'navUlid';
+
+const navul_li_one = document.createElement('li');
+const navul_li_two = document.createElement('li');
+const navul_li_three = document.createElement('li');
+
+navul_li_one.appendChild(document.createTextNode('Contact Us'));
+navul_li_two.appendChild(document.createTextNode('Dealers'));
+navul_li_three.appendChild(document.createTextNode('Green Statement'));
+
+navul.appendChild(navul_li_one)
+navul.appendChild(navul_li_two)
+navul.appendChild(navul_li_three)
+
+
+
+document.getElementById('list-two').appendChild(navul)
+
+navul_list = []
+navul_list.push(navul_li_one)
+navul_list.push(navul_li_two)
+navul_list.push(navul_li_three)
+
+console.log(navul_list)
+navul_list.className = 'aboutus-nav-list'
+
+console.log(navul)
+
+

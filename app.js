@@ -138,6 +138,8 @@ navUl_container.push(navul_li_one);
 navUl_container.push(navul_li_two);
 navUl_container.push(navul_li_three);
 
+console.log(navUl_container)
+
 const aboutUsloop = function () {
   for (let i = 0; i < navUl_container.length; i++) {
     navUl_container[i].style.color = "black";
@@ -153,49 +155,39 @@ const aboutUsloop = function () {
 aboutUsloop();
 
 
-// const showaboutUsloop = function(){
-//     for(let i = 0; i < navUl_container.length; i++){
-//         document.addEventListener('click', function displayfunction(){
-//             document.getElementById('navLi-id-one').style.display = 'block';
-//             document.getElementById('navLi-id-two').style.display = 'block';
-//             document.getElementById('navLi-id-three').style.display = 'block';
-//         });
+const listenerOpen = document.getElementById("list-two");
+listenerOpen.addEventListener("click", myFunction)
+// console.log(listenerOpen)
 
-//         document.addEventListener('mouseout', function undisplayfunction(){
-//             document.getElementById('navLi-id-one').style.display = 'none';
-//             document.getElementById('navLi-id-two').style.display = 'none';
-//             document.getElementById('navLi-id-three').style.display = 'none';
-//         });
+function myFunction() {
+  document.getElementById("navLi-id-one").style.display = "block";
+  document.getElementById("navLi-id-two").style.display = "block";
+  document.getElementById("navLi-id-three").style.display = "block";
+}
 
-//     }
+const listenerExit = document.getElementById("header-class");
+listenerExit.addEventListener("mouseout", undisplayfunction);
+
+function undisplayfunction() {
+  document.getElementById("navLi-id-one").style.display = "none";
+  document.getElementById("navLi-id-two").style.display = "none";
+  document.getElementById("navLi-id-three").style.display = "none";
+}
+// console.log(listenerExit);
+
+
+//Hover Effect
+
+
+const hoveronList = document.getElementById("navLi-id-one");
+// hoveronList.addEventListener("mouseover", hoverFunction);
+console.log(hoveronList)
+
+// function hoverFunction() {
+//   document.getElementById("navLi-id-one").style.color = "white";
 // }
 
-// showaboutUsloop();
-
-const showaboutUsloop = function () {
-  for (let i = 0; i < navUl_container.length; i++) {
-        var listenerOpen = document.getElementById("navUl-id");
-        listenerOpen.addEventListener("click", myFunction)
-
-        var listenerExit = document.getElementById("p-one");
-        listenerExit.addEventListener("mouseout", undisplayfunction);
-
-        function myFunction() {
-            document.getElementById("navLi-id-one").style.display = "block";
-        }
-
-
-        function undisplayfunction() {
-            document.getElementById("navLi-id-one").style.display = "none";
-            document.getElementById("navLi-id-two").style.display = "none";
-            document.getElementById("navLi-id-three").style.display = "none";
-        }
-    }
-};
-
-showaboutUsloop();
-
-console.log(navUl_container);
+// console.log(navUl_container);
 
 navul.appendChild(navul_li_one);
 navul.appendChild(navul_li_two);
@@ -203,4 +195,4 @@ navul.appendChild(navul_li_three);
 
 document.getElementById("list-two").appendChild(navul);
 
-console.log(navul);
+// console.log(navul);

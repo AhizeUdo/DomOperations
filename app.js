@@ -125,6 +125,9 @@ navul_li_one.appendChild(document.createTextNode("Contact Us"));
 navul_li_two.appendChild(document.createTextNode("Dealers"));
 navul_li_three.appendChild(document.createTextNode("Green Statement"));
 
+
+// console.log(navul_li_one)
+
 navul_li_one.className = "aboutUs-list";
 navul_li_two.className = "aboutUs-list";
 navul_li_three.className = "aboutUs-list";
@@ -179,13 +182,11 @@ function undisplayfunction() {
 //Hover Effect
 
 
-const hoveronList = document.getElementById("navLi-id-one");
-// hoveronList.addEventListener("mouseover", hoverFunction);
-console.log(hoveronList)
+document.getElementById("navLi-li-one").onmouseover = function(){
+  this.style.color = "white";
+}
 
-// function hoverFunction() {
-//   document.getElementById("navLi-id-one").style.color = "white";
-// }
+
 
 // console.log(navUl_container);
 

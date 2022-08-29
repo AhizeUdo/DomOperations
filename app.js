@@ -186,9 +186,13 @@ function undisplayfunction() {
 //Hover Effect
 
 
-// document.getElementById("navLi-li-one").onmouseover = function(){
-//   this.style.color = "white";
-// }
+// const mouseeffect  = document.getElementById("navLi-li-one").onmouseover = this.style.color = "white";
+
+
+
+
+
+
 
 
 

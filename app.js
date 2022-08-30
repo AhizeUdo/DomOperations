@@ -166,9 +166,6 @@ function myFunction() {
   document.getElementById("navLi-id-one").style.display = "block";
   document.getElementById("navLi-id-two").style.display = "block";
   document.getElementById("navLi-id-three").style.display = "block";
-  document.getElementById("navLitwo-id-one").style.display = "block";
-  document.getElementById("navLitwo-id-two").style.display = "block";
-  document.getElementById("navLitwo-id-three").style.display = "block";
 }
 
 const listenerExit = document.getElementById("header-class");

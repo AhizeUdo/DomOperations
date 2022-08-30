@@ -141,7 +141,7 @@ navUl_container.push(navul_li_one);
 navUl_container.push(navul_li_two);
 navUl_container.push(navul_li_three);
 
-console.log(navUl_container)
+console.log(navUl_container);
 
 const aboutUsloop = function () {
   for (let i = 0; i < navUl_container.length; i++) {
@@ -245,7 +245,7 @@ missionloop();
 
 
 const listenerOpenTwo = document.getElementById("list-three");
-listenerOpenTwo.addEventListener("click", myFunctiontwo)
+listenerOpenTwo.addEventListener("click", myFunctiontwo);
 
 
 function myFunctiontwo() {

@@ -273,7 +273,7 @@ console.log(navultwo);
 
 
 const hidden_Section = document.querySelector(".Hidden-Section");
-const hidden_input = document.getElementById("input-hidden-section");
+const hidden_input = document.getElementById("input-Hidden-section");
 const btn_Hidden = document.getElementById("btn-Hidden-section");
 
 // console.log(input_section_Hidden)
@@ -281,8 +281,9 @@ const btn_Hidden = document.getElementById("btn-Hidden-section");
 
 btn_Hidden.addEventListener('click', function(){
   let p_principal = document.createElement("p");
-  let p_inputs = document.createTextNode(input_section_Hidden.value);
+  let p_inputs = document.createTextNode(hidden_input.value);
   p_principal.appendChild(p_inputs)
-  console.log(p_principal)
-})
+  hidden_Section.appendChild(p_principal)
+  console.log(hidden_Section)
+});
 

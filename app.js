@@ -272,3 +272,9 @@ console.log(navultwo);
 
 
 
+const hidden_Section = document.getElementById("Hidden-Section");
+const input_section_Hidden = document.getElementById("Hidden-Section");
+const btn_Hidden = document.getElementById("btn-Hidden-section");
+
+// console.log(input_section_Hidden)
+

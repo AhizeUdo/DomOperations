@@ -272,9 +272,16 @@ console.log(navultwo);
 
 
 
-const hidden_Section = document.getElementById("Hidden-Section");
-const input_section_Hidden = document.getElementById("Hidden-Section");
+const hidden_Section = document.querySelector(".Hidden-Section");
+const hidden_input = document.getElementById("input-hidden-section");
 const btn_Hidden = document.getElementById("btn-Hidden-section");
 
 // console.log(input_section_Hidden)
+
+
+btn_Hidden.addEventListener('click', function(){
+  let p_principal = document.createElement("p");
+  let p_inputs = document.createTextNode(input_section_Hidden.value);
+
+})
 

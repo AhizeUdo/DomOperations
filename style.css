@@ -18,3 +18,28 @@ body{
 #navLitwo-id-two{
     color: white;
 } */
+
+.Hidden-Section{
+    background-color: antiquewhite;
+    height: 200px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 15px;
+}
+
+.hidden-input{
+    background-image: linear-gradient(rgb(134, 121, 255), rgb(90, 148, 218));
+    color: white;
+    top: 3rem;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: "Dosis" sans-serif;
+    opacity: 0.7;
+    width: 29.6rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    height: 2rem;
+    border-radius: 8px;
+    border: solid 2px white;
+}

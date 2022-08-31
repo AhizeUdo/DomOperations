@@ -282,6 +282,7 @@ const btn_Hidden = document.getElementById("btn-Hidden-section");
 btn_Hidden.addEventListener('click', function(){
   let p_principal = document.createElement("p");
   let p_inputs = document.createTextNode(input_section_Hidden.value);
-
+  p_principal.appendChild(p_inputs)
+  console.log(p_principal)
 })
 

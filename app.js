@@ -275,15 +275,23 @@ console.log(navultwo);
 const hidden_Section = document.querySelector(".Hidden-Section");
 const hidden_input = document.getElementById("input-Hidden-section");
 const btn_Hidden = document.getElementById("btn-Hidden-section");
+hidden_Section.style.display = 'none';
 
 // console.log(input_section_Hidden)
 
 
 btn_Hidden.addEventListener('click', function(){
   let p_principal = document.createElement("p");
+  p_principal.style.fontFamily ="'Dosis', Sans-serif";
+  p_principal.style.color = 'black';
+  p_principal.style.fontSize = '30px';
+  p_principal.style.padding = '14px';
   let p_inputs = document.createTextNode(hidden_input.value);
   p_principal.appendChild(p_inputs)
   hidden_Section.appendChild(p_principal)
   console.log(hidden_Section)
 });
+
+const btn_show = document.getElementById("btn-Hidden-section-show");
+// console.log(btn_show)
 

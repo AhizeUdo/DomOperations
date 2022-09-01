@@ -290,7 +290,7 @@ btn_Hidden.addEventListener('click', function(){
   let p_inputs = document.createTextNode(hidden_input.value);
   p_principal.appendChild(p_inputs);
   hidden_Section.appendChild(p_principal);
-  console.log(hidden_Section)
+  // console.log(hidden_Section)
 });
 
 const btn_show = document.getElementById("btn-Hidden-section-show");
@@ -308,3 +308,35 @@ btn_close.addEventListener('click', function(){
 
 
 
+function person(firstName, lastName, age){
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+
+}
+
+const persn = new person('James', 'Darwin', '40');
+const persnA = new person('Sandra', 'Paula', '20');
+const persnB = new person('Bode', 'Thomas', '49');
+console.log(persn)
+console.log(persnA)
+
+//update class
+
+// person.prototype.update = function(newLN){
+//   this.lastName = newLN;
+// }
+
+// const persnC = new person('Jeffy', 'Sandy', '80');
+// console.log(persnC)
+
+
+function datafile(firstName, lastName, sex, ismarried, isvirgin){
+  person.call(this, firstName, lastName);
+  this.sex = sex;
+  this.ismarried = ismarried;
+  this.isvirgin = isvirgin;
+}
+
+const human = new datafile('Sandra', 'Pickins', 'female', 'False', 'False')
+console.log(human)

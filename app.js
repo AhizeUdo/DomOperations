@@ -288,8 +288,8 @@ btn_Hidden.addEventListener('click', function(){
   p_principal.style.fontSize = '21px';
   p_principal.style.padding = '14px';
   let p_inputs = document.createTextNode(hidden_input.value);
-  p_principal.appendChild(p_inputs)
-  hidden_Section.appendChild(p_principal)
+  p_principal.appendChild(p_inputs);
+  hidden_Section.appendChild(p_principal);
   console.log(hidden_Section)
 });
 

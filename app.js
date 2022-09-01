@@ -285,7 +285,7 @@ btn_Hidden.addEventListener('click', function(){
   p_principal.style.fontFamily ="'Dosis', Sans-serif";
   p_principal.style.color = 'black';
   btn_Hidden.style.color = 'white';
-  p_principal.style.fontSize = '30px';
+  p_principal.style.fontSize = '21px';
   p_principal.style.padding = '14px';
   let p_inputs = document.createTextNode(hidden_input.value);
   p_principal.appendChild(p_inputs)
@@ -295,5 +295,16 @@ btn_Hidden.addEventListener('click', function(){
 
 const btn_show = document.getElementById("btn-Hidden-section-show");
 // console.log(btn_show)
+btn_show.addEventListener('click', function(){
+  hidden_Section.style.display = 'block';
+  btn_show.style.color = 'white';
+});
+
+const btn_close = document.querySelector('.close-Hidden-section');
+// console.log(btn_close);
+btn_close.addEventListener('click', function(){
+  hidden_Section.style.display = 'none';
+})
+
 
 

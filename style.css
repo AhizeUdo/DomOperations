@@ -29,14 +29,15 @@ body{
     background-image: linear-gradient(rgb(134, 121, 255), rgb(90, 148, 218));
     border: solid 2px white;
     box-shadow:rgb(31, 28, 28) 10px 4px 12px;
-    margin-left: 25%;
+    margin-left: 35%;
+    margin-right: 20%;
     margin-top: 1rem;
 
 }
 
 .Hidden-Section{
     background-color: antiquewhite;
-    height: 150px;
+    height: 195px;
     margin-left: 25%;
     margin-right: 25%;
     border-radius: 15px;
@@ -58,10 +59,31 @@ body{
     font-family: "Dosis" sans-serif;
     opacity: 0.7;
     width: 35rem;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 33%;
+    margin-right: 35%;
     padding: 10px;
     height: 1.5rem;
     border-radius: 8px;
     border: solid 2px white;
 }
+
+.close-Hidden-section{
+    font-size: 19px;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    margin-left: 25rem;
+    text-align: center;
+    font-family: "Dosis" sans-serif;
+    font-weight: 100;
+    padding: 14px;
+    cursor: pointer;
+}
+
+
+/* .close-Hidden-section:hover{
+    border: 2px solid gray;
+    width: 150px;
+    border-radius: 9px;
+    box-shadow:rgb(31, 28, 28) 10px 4px 10px;
+} */

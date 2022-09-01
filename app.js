@@ -284,6 +284,7 @@ btn_Hidden.addEventListener('click', function(){
   let p_principal = document.createElement("p");
   p_principal.style.fontFamily ="'Dosis', Sans-serif";
   p_principal.style.color = 'black';
+  btn_Hidden.style.color = 'white';
   p_principal.style.fontSize = '30px';
   p_principal.style.padding = '14px';
   let p_inputs = document.createTextNode(hidden_input.value);
@@ -294,4 +295,5 @@ btn_Hidden.addEventListener('click', function(){
 
 const btn_show = document.getElementById("btn-Hidden-section-show");
 // console.log(btn_show)
+
 

@@ -315,6 +315,7 @@ function person(firstName, lastName, age){
 
 }
 
+
 const persn = new person('James', 'Darwin', '40');
 const persnA = new person('Sandra', 'Paula', '20');
 const persnB = new person('Bode', 'Thomas', '49');
@@ -323,9 +324,10 @@ console.log(persnA)
 
 //update class
 
-// person.prototype.update = function(newLN){
-//   this.lastName = newLN;
-// }
+person.prototype.update = function() {
+  return `Hello Mr/Mrs ${this.lastName} ${this.firstName}`
+}
+console.log(persn.update());
 
 // const persnC = new person('Jeffy', 'Sandy', '80');
 // console.log(persnC)
@@ -340,3 +342,4 @@ function datafile(firstName, lastName, sex, ismarried, isvirgin){
 
 const human = new datafile('Sandra', 'Pickins', 'female', 'False', 'False')
 console.log(human)
+

@@ -371,17 +371,21 @@ datafilePacket.push(personA);
 datafilePacket.push(personB);
 datafilePacket.push(personC);
 
-console.log(datafilePacket)
+console.log(datafilePacket);
 
-function checkAge(){
-  for(let i = 0; i < datafilePacket.length; i++){
-   if(datafilePacket[i] < 40){
-    console.log(datafilePacket)
-   }
-  }
-}
+// function checkAge(){
+//   for(let i = 0; i < datafilePacket.length; i++){
+//   //  console.log(datafilePacket[i])
+//   if(datafilePacket[i] === 'James'){
+//     console.log(datafilePacket[i])
+//   }
+// 
 
-console.log(checkAge())
+// console.log(checkAge())
+
+
+
+
 
 
 

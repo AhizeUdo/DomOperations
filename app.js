@@ -308,38 +308,104 @@ btn_close.addEventListener('click', function(){
 
 
 
-function person(firstName, lastName, age){
+// function person(firstName, lastName, age){
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.age = age;
+
+// }
+
+
+// const persn = new person('James', 'Darwin', '40');
+// const persnA = new person('Sandra', 'Paula', '20');
+// const persnB = new person('Bode', 'Thomas', '49');
+// console.log(persn)
+// console.log(persnA)
+
+// //update class
+
+// person.prototype.update = function() {
+//   return `Hello Mr/Mrs ${this.lastName} ${this.firstName}`
+// }
+// console.log(persn.update());
+
+// // const persnC = new person('Jeffy', 'Sandy', '80');
+// // console.log(persnC)
+
+
+// function datafile(firstName, lastName, sex, ismarried, isvirgin){
+//   person.call(this, firstName, lastName);
+//   this.sex = sex;
+//   this.ismarried = ismarried;
+//   this.isvirgin = isvirgin;
+// }
+
+// const human = new datafile('Sandra', 'Pickins', 'female', 'False', 'False')
+// console.log(human)
+
+
+
+
+
+
+function datafile(firstName, lastName, age){
   this.firstName = firstName;
   this.lastName = lastName;
   this.age = age;
-
 }
 
+const personA = new datafile('James', 'Andrews', '40');
+const personB = new datafile('Sandra', 'Simens', '39');
+const personC = new datafile('Lisa', 'Hopkins', '30');
 
-const persn = new person('James', 'Darwin', '40');
-const persnA = new person('Sandra', 'Paula', '20');
-const persnB = new person('Bode', 'Thomas', '49');
-console.log(persn)
-console.log(persnA)
+// console.log(personB)
 
-//update class
-
-person.prototype.update = function() {
-  return `Hello Mr/Mrs ${this.lastName} ${this.firstName}`
-}
-console.log(persn.update());
-
-// const persnC = new person('Jeffy', 'Sandy', '80');
-// console.log(persnC)
-
-
-function datafile(firstName, lastName, sex, ismarried, isvirgin){
-  person.call(this, firstName, lastName);
-  this.sex = sex;
-  this.ismarried = ismarried;
-  this.isvirgin = isvirgin;
+datafile.prototype.greetings = function (){
+  return `Hello I am ${this.firstName} ${this.lastName} and i am ${this.age} years old`;
 }
 
-const human = new datafile('Sandra', 'Pickins', 'female', 'False', 'False')
-console.log(human)
+console.log(personA.greetings());
+
+const datafilePacket = []
+datafilePacket.push(personA);
+datafilePacket.push(personB);
+datafilePacket.push(personC);
+
+console.log(datafilePacket)
+
+function checkAge(){
+  for(let i = 0; i < datafilePacket.length; i++){
+   if(datafilePacket[i] < 40){
+    console.log(datafilePacket)
+   }
+  }
+}
+
+console.log(checkAge())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

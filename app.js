@@ -379,8 +379,12 @@ const checkage = function checkAge(){
     datafile.prototype.greetingss = function (){
       return this.age < 40
     }
+    datafile.prototype.checkNames = function(){
+      return this.firstName
+    }
     // console.log(personB.greetingss())
-    console.log(datafilePacket[i].greetingss())
+    // console.log(datafilePacket[i].greetingss())
+    console.log(datafilePacket[i].checkNames())
   }
 }
 

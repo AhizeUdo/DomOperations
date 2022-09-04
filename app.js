@@ -356,7 +356,7 @@ function datafile(firstName, lastName, age){
 
 const personA = new datafile('James', 'Andrews', '40');
 const personB = new datafile('Sandra', 'Simens', '39');
-const personC = new datafile('Lisa', 'Hopkins', '30');
+const personC = new datafile('Lisa', 'Hopkins', '60');
 
 // console.log(personB)
 
@@ -371,7 +371,20 @@ datafilePacket.push(personA);
 datafilePacket.push(personB);
 datafilePacket.push(personC);
 
-console.log(datafilePacket);
+// console.log(datafilePacket[1]);
+
+
+const checkage = function checkAge(){
+  for(let i = 0; i < datafilePacket.length; i++){
+    datafile.prototype.greetingss = function (){
+      return this.age < 40
+    }
+    // console.log(personB.greetingss())
+    console.log(datafilePacket[i].greetingss())
+  }
+}
+
+console.log(checkage())
 
 // function checkAge(){
 //   for(let i = 0; i < datafilePacket.length; i++){
@@ -379,9 +392,10 @@ console.log(datafilePacket);
 //   if(datafilePacket[i] === 'James'){
 //     console.log(datafilePacket[i])
 //   }
-// 
 
-// console.log(checkAge())
+
+
+
 
 
 

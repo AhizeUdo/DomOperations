@@ -348,54 +348,179 @@ btn_close.addEventListener('click', function(){
 
 
 
-function datafile(firstName, lastName, age){
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.age = age;
+// function datafile(firstName, lastName, age){
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.age = age;
+// }
+
+// const personA = new datafile('James', 'Andrews', '40');
+// const personB = new datafile('Sandra', 'Simens', '39');
+// const personC = new datafile('Lisa', 'Hopkins', '60');
+
+// // console.log(personB)
+
+// datafile.prototype.greetings = function (){
+//   return `Hello I am ${this.firstName} ${this.lastName} and i am ${this.age} years old`;
+// }
+
+// console.log(personA.greetings());
+
+// const datafilePacket = []
+// datafilePacket.push(personA);
+// datafilePacket.push(personB);
+// datafilePacket.push(personC);
+
+// // console.log(datafilePacket[1]);
+
+
+// const checkage = function checkAge(){
+//   for(let i = 0; i < datafilePacket.length; i++){
+//     datafile.prototype.greetingss = function (){
+//       return this.age < 40
+//     }
+//     datafile.prototype.checkNames = function(){
+//       return this.firstName
+//     }
+//     // console.log(personB.greetingss())
+//     // console.log(datafilePacket[i].greetingss())
+//     console.log(datafilePacket[i].checkNames())
+//   }
+// }
+
+// console.log(checkage())
+
+// // function checkAge(){
+// //   for(let i = 0; i < datafilePacket.length; i++){
+// //   //  console.log(datafilePacket[i])
+// //   if(datafilePacket[i] === 'James'){
+// //     console.log(datafilePacket[i])
+// //   }
+
+
+
+
+
+function person (firstName, lastName, age, sex){
+  this.firstName = firstName
+  this.lastName =  lastName
+  this.age= age
+  this.sex = sex
 }
 
-const personA = new datafile('James', 'Andrews', '40');
-const personB = new datafile('Sandra', 'Simens', '39');
-const personC = new datafile('Lisa', 'Hopkins', '60');
 
-// console.log(personB)
+const personA = new person('James', 'Ade', '60', 'male')
+const personB = new person('Sandra', 'Perkins', '40', 'female')
+const personC = new person('Ruth', 'Soltus', '35', 'female')
 
-datafile.prototype.greetings = function (){
-  return `Hello I am ${this.firstName} ${this.lastName} and i am ${this.age} years old`;
+console.log(personA)
+
+person.prototype.update = function(){
+  return `Hello I am ${this.firstName} ${this.lastName} and I am ${this.age} years old`
 }
 
-console.log(personA.greetings());
 
-const datafilePacket = []
-datafilePacket.push(personA);
-datafilePacket.push(personB);
-datafilePacket.push(personC);
-
-// console.log(datafilePacket[1]);
+console.log(personA.update())
 
 
-const checkage = function checkAge(){
-  for(let i = 0; i < datafilePacket.length; i++){
-    datafile.prototype.greetingss = function (){
+function datafile(firstName, lastName, age, sex, ismarried, isvirgin){
+  person.call(this, firstName, lastName, age)
+  this.sex = sex
+  this.ismarried = ismarried
+  this.isvirgin = isvirgin
+}
+
+const Ebuka = new datafile('Ebuka', 'Samson', '26', 'male', 'false', 'yes')
+console.log(Ebuka)
+
+
+const arr = []
+arr.push(personA)
+arr.push(personB)
+arr.push(personC)
+
+console.log(arr)
+
+const checkinfo = function (){
+  for(let i = 0; i < arr.length; i++){
+    // console.log(arr[i])
+    person.prototype.ageCheck = function(){
       return this.age < 40
     }
-    datafile.prototype.checkNames = function(){
-      return this.firstName
+    person.prototype.firstNames = function(){
+      return this.lastName
     }
-    // console.log(personB.greetingss())
-    // console.log(datafilePacket[i].greetingss())
-    console.log(datafilePacket[i].checkNames())
+
+    person.prototype.checkSexes = function(){
+      return this.sex
+    }
+    console.log(arr[i].firstNames())
+    console.log(arr[i].checkSexes())
+    console.log(arr[i].ageCheck())
   }
 }
 
-console.log(checkage())
+checkinfo()
 
-// function checkAge(){
-//   for(let i = 0; i < datafilePacket.length; i++){
-//   //  console.log(datafilePacket[i])
-//   if(datafilePacket[i] === 'James'){
-//     console.log(datafilePacket[i])
-//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

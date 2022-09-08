@@ -460,7 +460,7 @@ const checkinfo = function (){
   }
 }
 
-checkinfo()
+checkinfo();
 
 //James calj
 

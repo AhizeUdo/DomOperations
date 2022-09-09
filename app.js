@@ -316,11 +316,11 @@ btn_close.addEventListener('click', function(){
 // }
 
 
-// const persn = new person('James', 'Darwin', '40');
-// const persnA = new person('Sandra', 'Paula', '20');
-// const persnB = new person('Bode', 'Thomas', '49');
-// console.log(persn)
-// console.log(persnA)
+const persn = new person('James', 'Darwin', '40');
+const persnA = new person('Sandra', 'Paula', '20');
+const persnB = new person('Bode', 'Thomas', '49');
+console.log(persn)
+console.log(persnA)
 
 // //update class
 

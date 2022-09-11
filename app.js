@@ -401,68 +401,68 @@ btn_close.addEventListener('click', function(){
 
 
 
-function person (firstName, lastName, age, sex){
-  this.firstName = firstName
-  this.lastName =  lastName
-  this.age= age
-  this.sex = sex
-}
+// function person (firstName, lastName, age, sex){
+//   this.firstName = firstName
+//   this.lastName =  lastName
+//   this.age= age
+//   this.sex = sex
+// }
 
 
-const personA = new person('James', 'Ade', '60', 'male')
-const personB = new person('Sandra', 'Perkins', '40', 'female')
-const personC = new person('Ruth', 'Soltus', '35', 'female')
+// const personA = new person('James', 'Ade', '60', 'male')
+// const personB = new person('Sandra', 'Perkins', '40', 'female')
+// const personC = new person('Ruth', 'Soltus', '35', 'female')
 
-console.log(personA)
+// console.log(personA)
 
-person.prototype.update = function(){
-  return `Hello I am ${this.firstName} ${this.lastName} and I am ${this.age} years old`
-}
-
-
-console.log(personA.update())
+// person.prototype.update = function(){
+//   return `Hello I am ${this.firstName} ${this.lastName} and I am ${this.age} years old`
+// }
 
 
-function datafile(firstName, lastName, age, sex, ismarried, isvirgin){
-  person.call(this, firstName, lastName, age)
-  this.sex = sex
-  this.ismarried = ismarried
-  this.isvirgin = isvirgin
-}
-
-const Ebuka = new datafile('Ebuka', 'Samson', '26', 'male', 'false', 'yes')
-console.log(Ebuka)
+// console.log(personA.update())
 
 
-const arr = []
-arr.push(personA)
-arr.push(personB)
-arr.push(personC)
+// function datafile(firstName, lastName, age, sex, ismarried, isvirgin){
+//   person.call(this, firstName, lastName, age)
+//   this.sex = sex
+//   this.ismarried = ismarried
+//   this.isvirgin = isvirgin
+// }
 
-console.log(arr)
+// const Ebuka = new datafile('Ebuka', 'Samson', '26', 'male', 'false', 'yes')
+// console.log(Ebuka)
 
-const checkinfo = function (){
-  for(let i = 0; i < arr.length; i++){
-    // console.log(arr[i])
-    person.prototype.ageCheck = function(){
-      return this.age < 40
-    }
-    person.prototype.firstNames = function(){
-      return this.lastName
-    }
 
-    person.prototype.checkSexes = function(){
-      return this.sex
-    }
-    console.log(arr[i].firstNames())
-    console.log(arr[i].checkSexes())
-    console.log(arr[i].ageCheck())
-  }
-}
+// const arr = []
+// arr.push(personA)
+// arr.push(personB)
+// arr.push(personC)
 
-checkinfo();
+// console.log(arr)
 
-//James calj
+// const checkinfo = function (){
+//   for(let i = 0; i < arr.length; i++){
+//     // console.log(arr[i])
+//     person.prototype.ageCheck = function(){
+//       return this.age < 40
+//     }
+//     person.prototype.firstNames = function(){
+//       return this.lastName
+//     }
+
+//     person.prototype.checkSexes = function(){
+//       return this.sex
+//     }
+//     console.log(arr[i].firstNames())
+//     console.log(arr[i].checkSexes())
+//     console.log(arr[i].ageCheck())
+//   }
+// }
+
+// checkinfo();
+
+// //James calj
 
 
 

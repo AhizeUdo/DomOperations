@@ -466,6 +466,19 @@ btn_close.addEventListener('click', function(){
 
 
 
+class Person{
+  constructor(name, address, age){
+    this.name = name;
+    this.address = address;
+    this.birthday = new Date(age);
+  }
+
+}
+
+const people = new Person('James Patex', 'Under Lagis Bridge', '4-90-80')
+console.log(people)
+
+
 
 
 

@@ -475,7 +475,7 @@ class Person{
 
 }
 
-const people = new Person('James Patex', 'Under Lagis Bridge', '4-90-80')
+const people = new Person('James Patex', 'Under Lagis Bridge', '4/9/1980')
 console.log(people)
 
 

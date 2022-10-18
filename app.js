@@ -68,7 +68,7 @@ const p_loop = function () {
     paragraph_set[i].style.fontSize = "1.7rem";
     paragraph_set[i].style.marginRight = "10%";
     paragraph_set[i].style.marginLeft = "10%";
-  }
+  };
 };
 p_loop();
 let hr_edit = document.querySelector("hr");
